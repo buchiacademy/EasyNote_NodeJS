@@ -2,11 +2,11 @@
 const Note = require('../models/note.model.js');
 
 // Create and Save a new Note
-exports.Create = (req, res) => {
+exports.create = (req, res) => {
     // Vaidate request
     if (!req.body.content) {
         return res.status(400).send({
-            message: 'Note can not be emoty',
+            message: 'Note can not be empty',
         });
     }
 

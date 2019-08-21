@@ -5,7 +5,7 @@ module.exports = (app) => {
     app.post('/notes', notes.create);
 
     // Retreive all Notes
-    app.get('/notes', note.findAll);
+    app.get('/notes', notes.findAll);
 
     // Retreive a single node with node id
     app.get('/notes/:noteId', notes.findOne);
